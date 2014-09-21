@@ -4,26 +4,26 @@ function ShaderProgram(vsName, fsName) {
 	var shaderProgram = gl.createProgram();
 	gl.attachShader(shaderProgram, vertexShader);
 	gl.attachShader(shaderProgram, fragmentShader);
-	
+
 	gl.linkProgram(shaderProgram);
 	if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS)) {
 		alert("Could not initialise shaders");
 	}
-	
+
 	this.program = shaderProgram;
 }
 
 ShaderProgram.prototype.getAttribute = function(name) {
 	return gl.getAttribLocation(this.program, name);
-}
+};
 
 ShaderProgram.prototype.getUniform = function(name) {
-	return gl.getUniformLocation(this.program, name)
-}
+	return gl.getUniformLocation(this.program, name);
+};
 
 ShaderProgram.prototype.bind = function() {
 	gl.useProgram(this.program);
-}
+};
 
 function getShader(gl, id) {
 	var shaderScript = document.getElementById(id);
