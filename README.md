@@ -2,9 +2,8 @@
 
 ## Description
 This is a hypnotic WebGL demo, with portals, icospheres and blinking circles.
-All of these stuff use beats detection (thanks to dancer.js) to make things more immersive, and more hypnotic !
-
-Here is a [live demo](http://jeremy.tuloup.free.fr/demos/hypnotic/index.html) !
+It uses kick detection (thanks to dancer.js) to make things more immersive, and more hypnotic !
+The main purpose was to try and discover WebGL.
 
 Duration (track) : 01:14 
 
